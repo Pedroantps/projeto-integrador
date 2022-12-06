@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\projeto-integrador.Model\projeto-integrador.Model.csproj" />
+  </ItemGroup>
+
 </Project>

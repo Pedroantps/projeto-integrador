@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace projeto_integrador
 {
     /// <summary>
-    /// Lógica interna para TelaCurso.xaml
+    /// Lógica interna para TelaRequisitos.xaml
     /// </summary>
-    public partial class TelaCurso : Window
+    public partial class TelaRequisitos : Window
     {
-        public TelaCurso()
+        public TelaRequisitos()
         {
             InitializeComponent();
-        }
-
-        private void btnDS(object sender, MouseButtonEventArgs e)
-        {
-            TelaModulo TelaModulo = new TelaModulo();
-            TelaModulo.Show();
-            Close();
         }
     }
 }

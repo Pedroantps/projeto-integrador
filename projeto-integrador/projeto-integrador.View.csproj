@@ -9,13 +9,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="btn.jfif" />
+    <None Remove="logo.jpeg" />
     <None Remove="perfil-de-usuario.png" />
-    <None Remove="stop.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="2.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\projeto-integrador.Controller\projeto-integrador.Controller.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="btn.jfif" />
+    <Resource Include="logo.jpeg" />
     <Resource Include="perfil-de-usuario.png" />
-    <Resource Include="stop.png" />
   </ItemGroup>
 
 </Project>

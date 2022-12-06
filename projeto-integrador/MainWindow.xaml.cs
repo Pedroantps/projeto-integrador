@@ -22,7 +22,65 @@ namespace projeto_integrador
     {
         public MainWindow()
         {
+
             InitializeComponent();
         }
+
+        private void clicar1(object sender, MouseButtonEventArgs e)
+        {
+            MessageBox.Show(
+            "Consulte o seu gerente.",
+            "Informação",
+            MessageBoxButton.OK,
+            MessageBoxImage.Information);
+        }
+
+        private bool Verifica()
+        {
+            if (txt_InserirEmail.Text != "" && txt_InserirSenha.Password != "")
+            {
+                return true;
+            }
+            else
+            {
+                MessageBox.Show(
+                "Preencha todos os campos!",
+                "Atenção",
+                MessageBoxButton.OK,
+                MessageBoxImage.Warning);
+                return false;
+            }
+        }
+
+        private void ClicarBotao(object sender, RoutedEventArgs e)
+        {
+            if (Verifica() == true)
+            {
+                string email = txt_InserirEmail.Text;
+                string senha = txt_InserirSenha.Password;
+                Usuario usuario = cUsuario.ObterUsuarioPeloEmailSenha(email, senha);
+                if (usuario != null)
+                {
+
+                    TelaCurso TelaCurso = new TelaCurso();
+                    TelaCurso.Show();
+                    Close();
+
+                }
+                else
+                {
+                    MessageBox.Show(
+                    "Dados incorretos!",
+                    "Atenção",
+                    MessageBoxButton.OK,
+                    MessageBoxImage.Warning
+                    );
+                }
+
+            }
+        }
+    
+
     }
 }
+

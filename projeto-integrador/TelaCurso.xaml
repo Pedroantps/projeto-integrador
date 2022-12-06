@@ -5,9 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_integrador"
         mc:Ignorable="d"
-        Title="TelaCurso" Height="700" Width="400">
+        Title="TelaCurso" Height="700" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid Background="#FF656273">
-        <TextBlock HorizontalAlignment="Center" Margin="0,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="76" Width="336" Foreground="#FFD8F171" FontSize="28" FontWeight="Bold"><Run Text="Escolha o curso de seu interesse"/><Run Language="pt-br" Text=":"/></TextBlock>
-
+        <Image x:Name="img_btnDS" HorizontalAlignment="Center" Height="89" VerticalAlignment="Center" Width="400" Source="/btn.jfif"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="108" Width="340" FontSize="36" FontFamily="Global Sans Serif" FontWeight="Bold"><Run Text="Escolha o "/><Run Language="pt-br" Text="curso"/><Run Text=" de interesse:"/></TextBlock>
+        <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
+        <TextBlock x:Name="btnDS" HorizontalAlignment="Left" Height="62" Margin="0,320,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Desenvolvimento de Sistemas" MouseDown="btnDS"/>
+        <Image HorizontalAlignment="Center" Height="89" VerticalAlignment="Top" Width="400" Source="/btn.jfif" Margin="0,408,0,0"/>
+        <TextBlock HorizontalAlignment="Left" Height="62" Margin="0,426,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Mecatrônica"/>
     </Grid>
 </Window>
