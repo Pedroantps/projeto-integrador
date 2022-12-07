@@ -7,10 +7,20 @@
         mc:Ignorable="d"
         Title="avaliacao" Height="700" Width="400">
     <Grid Background="#FF656273">
-        <TextBlock HorizontalAlignment="Left" Margin="30,195,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="40" Width="219" FontSize="20"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="30,235,0,0" VerticalAlignment="Top" FontSize="18" IsChecked="False"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="30,263,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="30,291,0,0" VerticalAlignment="Top" FontSize="18"/>
-        <CheckBox Content="CheckBox" HorizontalAlignment="Left" Margin="30,319,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,131,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,313,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,492,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,581,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,608,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,635,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
     </Grid>
 </Window>
