@@ -10,11 +10,13 @@
 
   <ItemGroup>
     <None Remove="btn.jfif" />
+    <None Remove="btngerar.jpeg" />
     <None Remove="logo.jpeg" />
     <None Remove="perfil-de-usuario.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="iTextSharp" Version="5.5.13.3" />
     <PackageReference Include="MySqlConnector" Version="2.2.2" />
   </ItemGroup>
 
@@ -24,6 +26,7 @@
 
   <ItemGroup>
     <Resource Include="btn.jfif" />
+    <Resource Include="btngerar.jpeg" />
     <Resource Include="logo.jpeg" />
     <Resource Include="perfil-de-usuario.png" />
   </ItemGroup>

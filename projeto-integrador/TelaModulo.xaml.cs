@@ -23,5 +23,37 @@ namespace projeto_integrador
         {
             InitializeComponent();
         }
+
+        private void btnPA(object sender, MouseButtonEventArgs e)
+        {
+            string modulo = "Programação de aplicativos";
+            TelaRequisitos telaRequisitos = new TelaRequisitos(modulo);
+            TelaRequisitos.Show();
+            Close();
+        }
+
+        private void btnCSE(object sender, MouseButtonEventArgs e)
+        {
+            string modulo = "Comissionamento de sistmas embarcados";
+            TelaRequisitos telaRequisitos = new TelaRequisitos(modulo);
+            TelaRequisitos.Show();
+            Close();
+        }
+
+        private void btnRDS(object sender, MouseButtonEventArgs e)
+        {
+            string modulo = "Rede de dados em sistema de manufatura";
+            TelaRequisitos telaRequisitos = new TelaRequisitos(modulo);
+            TelaRequisitos.Show();
+            Close();
+        }
+
+        private void btnDS(object sender, MouseButtonEventArgs e)
+        {
+            string modulo = "Desenvolvimento de sistemas";
+            TelaRequisitos telaRequisitos = new TelaRequisitos(modulo);
+            TelaRequisitos.Show();
+            Close();
+        }
     }
 }

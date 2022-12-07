@@ -18,12 +18,13 @@
             </Image.OpacityMask>
         </Image>
         <TextBlock x:Name="txtEmail" HorizontalAlignment="Left" Margin="89,304,0,0" TextWrapping="Wrap" Text="E-mail" VerticalAlignment="Top" Height="30" Width="52" TextAlignment="Justify" Foreground="Black" FontWeight="Bold" FontSize="16" />
-        <TextBox x:Name="txt_InserirEmail" HorizontalAlignment="Center" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Margin="0,334,0,0" TextAlignment="Justify" Background="#FFD8F171"/>
+        <TextBox x:Name="txt_InserirEmail" HorizontalAlignment="Center" Height="41" TextWrapping="Wrap" VerticalAlignment="Top" Width="222" Margin="0,334,0,0" TextAlignment="Justify" Background="#FFD8F171" FontSize="14"/>
         <TextBlock x:Name="txtSenha" HorizontalAlignment="Left" Margin="89,398,0,0" TextWrapping="Wrap" Text="Senha" VerticalAlignment="Top" Height="22" Width="66" TextAlignment="Justify" Foreground="Black" FontWeight="Bold" RenderTransformOrigin="0.425,-0.598" FontSize="16" />
         <TextBlock x:Name="txt_EsqSenha" HorizontalAlignment="Left" Margin="89,469,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="19" MouseLeftButtonDown="clicar1" TextAlignment="Justify" Foreground="Black" FontWeight="Bold" FontSize="16"><Run Language="pt-br" Text="Esqueceu a senha?"/><LineBreak/><Run Language="pt-br"/></TextBlock>
         <PasswordBox x:Name="txt_InserirSenha" HorizontalAlignment="Center" Margin="0,424,0,0" VerticalAlignment="Top" Width="222" Height="41" Background="#FFD8F171"/>
         <Button x:Name="btnEntrar" Content="Entrar" HorizontalAlignment="Center" Margin="0,544,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.118,0.67" Height="51" Width="160" Click="ClicarBotao" Background="#FFD8F171" FontSize="18" FontWeight="Bold"
                 />
+        <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
 
     </Grid>
 </Window>

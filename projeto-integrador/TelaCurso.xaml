@@ -10,9 +10,9 @@
         ResizeMode="NoResize">
     <Grid Background="#FF656273">
         <Image x:Name="img_btnDS" HorizontalAlignment="Center" Height="89" VerticalAlignment="Center" Width="400" Source="/btn.jfif"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="108" Width="340" FontSize="36" FontFamily="Global Sans Serif" FontWeight="Bold"><Run Text="Escolha o "/><Run Language="pt-br" Text="curso"/><Run Text=" de interesse:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="108" Width="340" FontSize="36" FontFamily="Global Sans Serif" FontWeight="Bold" Foreground="#FFD8F171"><Run Text="Escolha o "/><Run Language="pt-br" Text="curso"/><Run Text=" de interesse:"/></TextBlock>
         <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
-        <TextBlock x:Name="btnDS" HorizontalAlignment="Left" Height="62" Margin="0,320,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Desenvolvimento de Sistemas" MouseDown="btnDS"/>
+        <TextBlock x:Name="txt_btnDS" HorizontalAlignment="Left" Height="62" Margin="2,320,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Desenvolvimento de Sistemas" MouseDown="btnDS"/>
         <Image HorizontalAlignment="Center" Height="89" VerticalAlignment="Top" Width="400" Source="/btn.jfif" Margin="0,408,0,0"/>
         <TextBlock HorizontalAlignment="Left" Height="62" Margin="0,426,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Mecatrônica"/>
     </Grid>

@@ -5,17 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_integrador"
         mc:Ignorable="d"
-        Title="TelaModulo" Height="700" Width="400">
+        Title="TelaModulo" Height="700" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid Background="#FF656273">
         <Image HorizontalAlignment="Center" Height="82" Margin="0,263,0,0" VerticalAlignment="Top" Width="400" Source="/btn.jfif"/>
-        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" Text="Escolha o módulo de interesse:" VerticalAlignment="Top" Height="108" Width="340" FontSize="36" FontFamily="Global Sans Serif"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" Text="Escolha o módulo de interesse:" VerticalAlignment="Top" Height="108" Width="340" FontSize="36" FontFamily="Global Sans Serif" Foreground="#FFD8F171" FontWeight="Bold"/>
         <Image HorizontalAlignment="Center" Height="80" Margin="0,367,0,0" VerticalAlignment="Top" Width="400" Source="/btn.jfif"/>
         <Image HorizontalAlignment="Center" Height="80" Margin="0,469,0,0" VerticalAlignment="Top" Width="400" Source="/btn.jfif"/>
         <Image HorizontalAlignment="Center" Height="82" Margin="0,576,0,0" VerticalAlignment="Top" Width="400" Source="/btn.jfif"/>
         <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
-        <TextBlock HorizontalAlignment="Center" Height="61" Margin="0,281,0,0" Text="Programação de aplicativos" VerticalAlignment="Top" Width="380" FontSize="28" TextAlignment="Center" TextWrapping="Wrap"/>
-        <TextBlock HorizontalAlignment="Left" Height="80" Margin="0,367,0,0" Text="Comissionamento de sistemas embarcados" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap"/>
-        <TextBlock HorizontalAlignment="Left" Height="80" Margin="2,469,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap"><Run Text="Rede de "/><Run Language="pt-br" Text="d"/><Run Text="ados em "/><Run Language="pt-br" Text="s"/><Run Text="istemas de "/><Run Language="pt-br" Text="m"/><Run Text="anufatura"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Height="62" Margin="0,594,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Desenvolvimento de Sistemas"/>
+        <TextBlock x:Name="txt_PA" HorizontalAlignment="Center" Height="61" Margin="0,281,0,0" Text="Programação de aplicativos" VerticalAlignment="Top" Width="380" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" MouseDown="btnPA"/>
+        <TextBlock x:Name="txt_CSE" HorizontalAlignment="Left" Height="80" Margin="0,367,0,0" Text="Comissionamento de sistemas embarcados" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" MouseDown="btnCSE"/>
+        <TextBlock x:Name="txt_RDS" HorizontalAlignment="Left" Height="80" Margin="2,469,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" MouseDown="btnRDS"><Run Text="Rede de "/><Run Language="pt-br" Text="d"/><Run Text="ados em "/><Run Language="pt-br" Text="s"/><Run Text="istemas de "/><Run Language="pt-br" Text="m"/><Run Text="anufatura"/></TextBlock>
+        <TextBlock x:Name="txt_DS" HorizontalAlignment="Left" Height="62" Margin="0,594,0,0" VerticalAlignment="Top" Width="390" FontSize="28" TextAlignment="Center" TextWrapping="Wrap" Text="Desenvolvimento de Sistemas" MouseDown="btnDS"/>
     </Grid>
 </Window>
