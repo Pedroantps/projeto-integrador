@@ -10,43 +10,25 @@ senha varchar(100),
 tipoUsuario varchar(100)
 );
 
-CREATE TABLE Curso(
+CREATE TABLE Provas(
 id int AUTO_INCREMENT PRIMARY KEY,
-nome varchar (100),
-idModulo int,
-idQuestoes int,
-FOREIGN KEY (idQuestoes) references Questoes(id),
-FOREIGN KEY (idModulo) references Modulo(id)
-);
-
-CREATE TABLE Modulo(
-id int AUTO_INCREMENT PRIMARY KEY,
-nome varchar(100),
-idQuestoes int,
-FOREIGN KEY (idQuestoes) references Questoes(id)
+titulo varchar(250),
+numeroQuestoes int,
+dificuldadeProva varchar(100)
 );
 
 CREATE TABLE Questoes(
 id int AUTO_INCREMENT PRIMARY KEY,
 idProvas int,
-idRespostas int,
+modulo varchar(250),
 enunciado varchar(250),
-FOREIGN KEY(idProvas) references Provas(id)
-FOREIGN KEY(idRespostas) references Respostas(id)
-);
-
-CREATE TABLE Respostas(
-id int AUTO_INCREMENT PRIMARY KEY,
-idQuestoes int,
+alternativaA varchar(250),
+alternativaB varchar(250),
+alternativaC varchar(250),
+alternativaD varchar(250),
 resposta varchar(250),
-FOREIGN KEY(idQuestoes) references Questoes(id)
-);
-
-CREATE TABLE Provas(
-id int AUTO_INCREMENT PRIMARY KEY,
-titulo varchar(250),
-numeroQuestoes int,
-dificuldadeQuestoes varchar(100)
+dificuldadeQuestao varchar(250),
+FOREIGN KEY(idProvas) references Provas(id)
 );
 
 INSERT INTO Usuario(nome, email, senha, tipoUsuario) 

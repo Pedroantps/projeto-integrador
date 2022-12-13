@@ -27,7 +27,6 @@ namespace projeto_integrador
 
         private void btnGerar(object sender, MouseButtonEventArgs e)
         {
-           
         }
     }
 }

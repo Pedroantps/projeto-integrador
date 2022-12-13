@@ -19,9 +19,29 @@ namespace projeto_integrador
     /// </summary>
     public partial class avaliacao : Window
     {
+        
         public avaliacao()
         {
             InitializeComponent();
+        }
+
+        public void questoes()
+        {
+            string enunciado = txtQuestao1.Text;
+            string alternativaA = txtAlternativaA1.Text;
+            string alternativaB = txtAlternativaB1.Text;
+            string alternativaC = txtAlternativaC1.Text;
+            string alternativaD = txtAlternativaD1.Text;
+            string modulo = "";
+            Questao questao = consultaQuestao.ObterQuestao(enunciado, alternativaA, alternativaB, alternativaC, alternativaD, modulo);
+            if (questao != null)
+            {
+                enunciado = questao.enunciado;
+                alternativaA = questao.alternativaA;
+                alternativaB = questao.alternativaB;
+                alternativaC = questao.alternativaC;
+                alternativaD = questao.alternativaD;
+            }
         }
     }
 }
