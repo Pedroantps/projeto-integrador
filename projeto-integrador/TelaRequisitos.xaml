@@ -9,7 +9,7 @@
         WindowStartupLocation="CenterScreen"
         ResizeMode="NoResize">
     <Grid Background="#FF656273">
-        <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
+        <Image x:Name="imgTela_inicial" HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg" MouseDown="voltaTela"/>
         <TextBlock HorizontalAlignment="Left" Margin="27,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="343" FontSize="30" FontFamily="Global Sans Serif" FontWeight="Bold" Foreground="#FFD8F171"><Run Language="pt-br" Text="Requisitos da avaliação"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" Margin="27,188,0,0" TextWrapping="Wrap" Text="Número de questões:" VerticalAlignment="Top" FontSize="26" FontWeight="Bold" Foreground="#FFD8F171"/>
         <ComboBox x:Name="cbQntd" HorizontalAlignment="Left" Margin="293,197,0,0" VerticalAlignment="Top" Width="54" RenderTransformOrigin="1.08,1.049" Height="26" Background="Black"/>

@@ -5,22 +5,41 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:projeto_integrador"
         mc:Ignorable="d"
-        Title="avaliacao" Height="700" Width="400">
+        Title="avaliacao" Height="700" Width="400"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize">
     <Grid Background="#FF656273">
-        <TextBlock x:Name="txtQuestao1" HorizontalAlignment="Left" Margin="20,131,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
-        <TextBlock x:Name="txtAlternativaA1" HorizontalAlignment="Left" Margin="20,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
-        <TextBlock x:Name="txtAlternativaB1" HorizontalAlignment="Left" Margin="20,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
-        <TextBlock x:Name="txtAlternativaC1" HorizontalAlignment="Left" Margin="20,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
-        <TextBlock x:Name="txtAlternativaD1" HorizontalAlignment="Left" Margin="20,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
-        <TextBlock x:Name="txtQuestao2" HorizontalAlignment="Left" Margin="20,313,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="20,375,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,402,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,429,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,456,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
-        <TextBlock x:Name="txtQuestao3" HorizontalAlignment="Left" Margin="20,492,0,0" TextWrapping="Wrap" Text="Enunciado questão" VerticalAlignment="Top" Height="56" Width="370" FontSize="20"/>
-        <TextBlock HorizontalAlignment="Left" Margin="20,554,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="a) "/><Run Text="Alternativa A"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,581,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="b"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="B"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,608,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14"><Run Language="pt-br" Text="c"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="C"/></TextBlock>
-        <TextBlock HorizontalAlignment="Left" Margin="20,635,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14"><Run Language="pt-br" Text="d"/><Run Text=") "/><Run Text="Alternativa "/><Run Language="pt-br" Text="D"/></TextBlock>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="172*"/>
+            <RowDefinition Height="513*"/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="txtQuestao1" HorizontalAlignment="Left" Margin="20,96,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="380" FontSize="16" FontWeight="Bold" Grid.RowSpan="2"><Run Language="pt-br" Text="1) "/><Run Text="Ocorrências detectáveis ou perceptíveis, com impacto e importância, que normalmente são registradas por um serviço automático ou por uma ferramenta de monitoração."/></TextBlock>
+        <TextBlock x:Name="txtAlternativaA1" HorizontalAlignment="Left" Margin="20,20,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="a) Incidente"/>
+        <TextBlock x:Name="txtAlternativaB1" HorizontalAlignment="Left" Margin="20,47,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1"><Run Text="b"/><Run Text=") "/><Run Language="pt-br" Text="Eventos"/><LineBreak/><Run Language="pt-br"/></TextBlock>
+        <TextBlock x:Name="txtAlternativaC1" HorizontalAlignment="Left" Margin="20,74,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="c) Prevenção"/>
+        <TextBlock x:Name="txtAlternativaD1" HorizontalAlignment="Left" Margin="20,101,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14" Grid.Row="1" Text="d) Manutenção"/>
+        <TextBlock x:Name="txtQuestao2" HorizontalAlignment="Left" Margin="20,135,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="370" FontSize="16" FontWeight="Bold" Grid.Row="1"><Run Language="pt-br" Text="2) "/><Run Text="'O espaço de armazenamento está cheio, o servidor não conseguemais armazenar nenhum dado.' Isso se refere a qual tipo de evento?"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,203,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="a) Exceção"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="b) Aviso"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,257,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="c) Problema"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,284,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14" Grid.Row="1" Text="d) Incidente"/>
+        <TextBlock x:Name="txtQuestao3" HorizontalAlignment="Left" Margin="20,310,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="93" Width="357" FontSize="16" FontWeight="Bold" Grid.Row="1"><Run Language="pt-br" Text="3) "/><Run Text="Esse teste é feito para avaliar os limites de uso do software, o quanto ele suporta em volume de informações, tráfego etc. sem que apresente erros. Teste de ________."/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="20,400,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="a) Estresse"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,427,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="b) Peso"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,454,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="22" Width="158" FontSize="14" Grid.Row="1" Text="c) Força"/>
+        <TextBlock HorizontalAlignment="Left" Margin="20,481,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="21" Width="158" FontSize="14" Grid.Row="1" Text="d) Carga"/>
+        <Image HorizontalAlignment="Left" Height="54" VerticalAlignment="Top" Width="54" Source="/logo.jpeg"/>
+        <Image x:Name="imgGabarito" HorizontalAlignment="Left" Height="63" Margin="324,10,0,0" VerticalAlignment="Top" Width="55" Source="/feedback.png" MouseDown="gerarGabarito" RenderTransformOrigin="-0.055,0.469"/>
+        <TextBlock HorizontalAlignment="Left" Margin="320,70,0,0" TextWrapping="Wrap" Text="GABARITO" VerticalAlignment="Top" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" Margin="99,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="206" FontSize="24" FontWeight="Bold" RenderTransformOrigin="0.5,0.5" Foreground="#FFD8F171">
+            <TextBlock.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.13"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBlock.RenderTransform><Run Text="P"/><Run Language="pt-br" Text="ROVA GERADA"/><LineBreak/><Run/><LineBreak/><Run/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Margin="24,59,0,0" TextWrapping="Wrap" Text="Comissionamento de Sistemas" VerticalAlignment="Top" FontSize="20" Width="329" FontWeight="Bold" Foreground="#FFD8F171"/>
     </Grid>
 </Window>

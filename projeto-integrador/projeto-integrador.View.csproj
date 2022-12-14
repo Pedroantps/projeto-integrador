@@ -11,6 +11,7 @@
   <ItemGroup>
     <None Remove="btn.jfif" />
     <None Remove="btngerar.jpeg" />
+    <None Remove="feedback.png" />
     <None Remove="logo.jpeg" />
     <None Remove="perfil-de-usuario.png" />
   </ItemGroup>
@@ -27,6 +28,7 @@
   <ItemGroup>
     <Resource Include="btn.jfif" />
     <Resource Include="btngerar.jpeg" />
+    <Resource Include="feedback.png" />
     <Resource Include="logo.jpeg" />
     <Resource Include="perfil-de-usuario.png" />
   </ItemGroup>

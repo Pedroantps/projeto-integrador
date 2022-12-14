@@ -43,5 +43,12 @@ namespace projeto_integrador
                 alternativaD = questao.alternativaD;
             }
         }
+
+        private void gerarGabarito(object sender, MouseButtonEventArgs e)
+        {
+            gabarito gabarito = new gabarito();
+            gabarito.Show();
+            Close();
+        }
     }
 }
